@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*--------------Le header--------------------*/
+
+#accueil{
+background-image: url("image/ordi2.jpg");
+background-repeat: no-repeat;
+
+}
+
+#nomdev{
+ 
+  width: 59vw;
+
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding-top: 15%;
+}
+
+#nom, #dev{
+  color: white;
+  text-shadow: 55px 1px 55px , 0 0 1em black, 0 0 0.2em black;
+  /*background-color:rgba(3, 30, 69, 0.3);
+  box-shadow: -17px 11px 7px 3px rgba(0, 0, 55, .2);*/
+}
+
+#nom{
+  font-size: 5em;
+}
+
+#dev{
+  font-size: 3em;
+}
+
+#btnheader{
+  padding: 1% 1.3%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-color: #031e45;
+  border: 2px solid white;
+  margin-top: 13%;
+  margin-bottom: 5%;
+  border-radius: 7%;
+  box-shadow: 17px 11px 7px 3px rgba(0, 0, 95, .3);
+}
+
+#btnheader:hover {
+  background-color: #0C9BE2;
+  
+
+}
+
+#am{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+/*--------------NavBarre---------------*/
+ #navbar {
+  height:7vh;
+ /* border: 3px solid olive;*/
+z-index: 9;
+  overflow: hidden;
+  border-bottom: #0C9BE2 1px solid;
+  border-top: #0C9BE2 1px solid;
+ 
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height:7vh; 
+  list-style: none;
+  /*border: 3px solid red;*/
+  background-color: #031e45;
+
+}
+
+#navbar ul li {
+  margin-left: 35px;
+ padding-left: 0px;
+ padding-right: 25px;
+ list-style: none;
+ font-size: 2rem;
+  
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color:white;
+  padding: 5px;
+}
+
+#navbar ul li a:hover {
+  color: #0C9BE2;
+ 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 40px;
+}
+
+ 
+ 
+
+
+
+/*----------------AboutMe---------------------*/
+
+
+
+#aboutme {
+  
+  font-size: 1.9em;
+  color:  #031e45;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-top: 7%;
+}
+
+#my{
+  width: 7%;
+  padding: 0.1%;
+  background-color:#031e45;
+  margin-left: 50%;
+  margin-top: 4%;
+  transform: translate(-50%);
+}
+
+
+#about{
+
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+
+ 
+}
+#imgordi{
+ 
+  height: 50%;
+  width: 47%;
+  margin-top: 9%;
+ 
+}
+
+#presentation{
+  width: 39%;
+  padding: 1%;
+  padding-top: 2%;
+  margin-top: 7%;
+
+  line-height: 1.7em;
+ 
+}
+
+#para1{
+  display: none;
+}
+
+#btnaboutme{
+  padding: 3% 2%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-color: #031e45;
+  border: 2px solid #0C9BE2;
+  margin-top: 37%;
+  border-radius: 7%;
+  margin-top: 19%;
+}
+
+#btnaboutme:hover {
+  background-color: #0C9BE2;
+  
+
+}
+
+.pres{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+/*----------------Compétences--------------------*/
+
+/*------------- Partie 1 Titre----------------------------*/
+#competences {
+  background-color: #031e45;
+  font-size: 1.9em;
+  color: #FFF;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-top: 7%;
+}
+
+#mybar{
+  width: 7%;
+  padding: 0.1%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 3%;
+  background-color: white;
+}
+
+/*------------- Partie 2----------{
+  
+  font-size: 1.9em;
+  color:  #031e45;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-top: 7%;
+}------------------*/
+#container-cards{
+  background-color:#031e45;
+  display: flex;
+  padding-bottom: 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.carte{
+  width: 19%;
+  padding-left: 2%;
+  background: none;
+ 
+  /*border: #4CAF50 3px solid;*/
+}
+
+/*--------------------Portfolio------------------*/
+
+/*---------------1ère Partie---------------------*/
+
+#portfolio{
+  
+  font-size: 1.9em;
+  color:  #031e45;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-top: 7%;
+  
+}
+#myport{
+  width: 7%;
+  padding: 0.1%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 3%;
+  background-color: #031e45;
+}
+
+    
+
+
+/*-----------------2ème Partie---------------------*/
+.card1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.c1{
+  width: 33%;
+  color: #FFF;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+
+
+.c1:hover{
+  background-color: #031e45;
+  border: #0C9BE2 3px solid;
+}
+
+#lien{
+ text-decoration-color: #FFF;
+ color: #FFF;
+}
+
+
+
+  
+ 
+
+
+
+
+
+
+/*-----------------Form Contact----------------------*/
+
+#contacts{
+ 
+  margin-top: 7%;
+  margin-bottom: 5%;
+  font-size: 1.9em;
+  color: #FFF;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+
+
+#contacts hr{
+  width: 7%;
+  padding: 0.1%;
+  background-color: #FFF;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 5%;
+  
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 3px solid #0C9BE2; /* Gray border */
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #031e45;
+  color: white;
+  padding: 1% 3%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #0C9BE2;
+  
+
+}
+
+#name, #mail, #yourtext{
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+
+/* Add a background color and some padding around the form */
+#contact {
+  background-image: linear-gradient(rgba(54, 132, 240, 0.5), rgba(3,30,69,0.7)), url("image/contact-bg.jpg");
+  background-repeat: no-repeat;
+  
+ padding: 3% 13%;
+}
+
+#git{
+ 
+  margin-left: 50%;
+  transform: translate(-50%);
+  width:4%;
+  margin-top: 1.5%;
+}
+
+
+
+/*-------------FOOTER------------------------*/
+footer{
+  border-bottom: #0C9BE2 1px solid;
+  border-top: #0C9BE2 1px solid;
+
+  background-color: #031e45;
+}
+
+
+#foot{
+  color: #FFF;
+  font-size: 1.1em;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+/*les media queries*/
+
+@media screen and (max-width: 770px){
+
+/*--------------HEADER--------------*/ 
+
+  #accueil{
+    background-image: url("image/ordi2.jpg");
+    width: 100vw;
+    }
+
+  #nomdev{
+    width: 59vw;
+    text-align: center;
+    padding-top: 15%;
+    }
+    #btnheader:hover {
+      background-color: #031e45;
+      
+    
+    }
+    
+/*--------------NAV------------------*/   
+
+    #navbar {
+    width: 100vw;
+   height: 100vh;
+   display: flex;
+    flex-direction:column;
+   
+  z-index: 9;
+    overflow: hidden;
+    border-bottom: #0C9BE2 2px solid;
+    border-top: #0C9BE2 2px solid;
+   height: 21%;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    list-style: none;
+   
+    background-color: #031e45;
+  
+  }
+
+/*--------------------ABOUTME----------------*/
+
+  #aboutme {
+   
+    font-size: 1.9em;
+    color:  #031e45;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+   
+  }
+
+/*-----------------COMPETENCES--------------------*/
+
+#container-cards{
+  background-color:#031e45;
+  display: flex;
+  
+  padding-bottom: 5%;
+  justify-content: center;
+  
+  }
+.carte{
+  width: 45%;
+  padding-left: 9%;
+  background: none;
+  }
+
+/*---------------PORFOLIO--------------------------*/
+
+.card1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  }
+
+.c1{
+  width: 43%;
+  color: #FFF;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #031e45;
+  border: #0C9BE2 3px solid;
+  }
+
+#projet{
+  font-size: 1.7em;
+}
+}
+/*----------------------------------------------------------------*/
+
+
+@media screen and (max-width: 375px){
+
+
+/*---------------HEADER---------------*/
+
+#nom{
+  font-size: 4em;
+}
+
+#dev{
+  font-size: 2em;
+}
+
+  #btnheader:hover {
+    background-color: #031e45;
+  }
+
+/*----------------------NAV------------------------------*/
+
+/*--------------NAV------------------*/   
+
+#navbar {
+  width: 100vw;
+ height: 100vh;
+ display: flex;
+  flex-direction:column;
+ 
+z-index: 9;
+  overflow: hidden;
+  border-bottom: #0C9BE2 2px solid;
+  border-top: #0C9BE2 2px solid;
+ height: 21%;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
+  list-style: none;
+ 
+  background-color: #031e45;
+
+}
+
+
+
+  /*--------------------AboutMe-----------------*/
+
+  #about{
+
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+   
+  }
+  #imgordi{
+   
+    height: 21%;
+    width: 97%;
+    margin-top: 9%;
+   
+  }
+  
+  #presentation{
+   
+    padding: 1%;
+    padding-top: 2%;
+    margin-top: 7%;
+  
+    line-height: 1.5em;
+   width: 90vw;
+  }
+
+  #para{
+    display: none;
+  }
+  #para1{
+    display:block;
+  }
+  #btnaboutme{
+    padding: 3% 2%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: #031e45;
+    border: 2px solid #0C9BE2;
+    margin-top: 3%;
+    border-radius: 7%;
+   
+  }
+
+/*-----------------COMPETENCES--------------------*/
+  #competences {
+    background-color: #031e45;
+    font-size: 1.9em;
+    color: #FFF;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    margin-top: 17%;
+  }
+
+  #container-cards{
+    background-color:#031e45;
+    display: flex;
+   
+   
+   
+   
+    
+    }
+  .carte{
+    margin:0;
+    width: 85%;
+   padding: 0;
+    background: none;
+   
+    justify-content: space-between;
+    padding-left: 13%;
+    }
+
+
+/*---------------PORFOLIO--------------------------*/
+
+.card1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  }
+
+.c1{
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #031e45;
+  border: #0C9BE2 1px solid;
+  }
+
+  #projet{
+    font-size: 1.7em;
+  }
+}
+
+
+
