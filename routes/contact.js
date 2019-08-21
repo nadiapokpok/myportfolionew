@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Contact = require('../models/contactModel');
-const PWD = require('../env').PWD;
-require('dotenv');
+require('dotenv').config();
 
 // Importation de Nodemailer:
 const mailer = require('nodemailer');
@@ -16,12 +15,13 @@ router.post('/', (req, res) => {
     data.name = req.body.name;
     data.email = req.body.email;
     data.message = req.body.message;
+  
 
     data.save(function (err) {
         if (err) {
             res.send(err);
         }
-
+        
         // Préparation de notre mail.
         // On commence par authentifier notre expéditeur qui est notre serveur:
         let transporter = mailer.createTransport(smtpTransport({
@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
             secure: true, // true for 465, false for other ports
             auth: {
                 user: 'nadia.aksouh@gmail.com', // generated ethereal user
-                pass: PWD // protection du pwd
+                pass: process.env.MDP // protection du pwd
             }
         }));
 

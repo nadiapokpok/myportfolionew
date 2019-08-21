@@ -5,6 +5,7 @@ const Contact = require('../models/contactModel');
 
 //GET
 router.get('/', (req, res) => {
+   
     Project.find((err, project) => {
             if (err) {
                 res.send(err);
